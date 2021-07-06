@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- barra ricerca -->
+    <Header/>
+
+    <!-- corpo pagina -->
+    <main>
+      <MainContent/>
+    </main>
+
+    <!-- piè di pagina -->
+    <footer>
+      <TopFooter/>
+      <MidFooter/>
+      <BottFooter/>
+    </footer>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import MainContent from './components/MainContent.vue'
+import TopFooter from './components/TopFooter.vue'
+import MidFooter from './components/MidFooter.vue'
+import BottFooter from './components/BottFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    MainContent,
+    TopFooter,
+    MidFooter,
+    BottFooter
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
