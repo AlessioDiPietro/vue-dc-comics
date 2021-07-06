@@ -91,7 +91,6 @@ export default {
 @import '../components/style/BlueDC.scss';
     .box-header {
         height: 115px;
-        background-color: red;
         padding: 1% 16%;
         display: flex;
         justify-content: space-between;
@@ -105,11 +104,11 @@ export default {
             display: inline-block;
             margin: 0 15px;
             cursor: pointer;
-            padding: 47px 0;
+            padding: 49px 0;
 
             &:hover {
                 border-bottom: 3px solid $bluedc;
-                padding: 44px 0;
+                padding: 46px 0;
                 
                 a {
                     color: $bluedc;
