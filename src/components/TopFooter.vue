@@ -53,13 +53,14 @@ export default {
     height: 150px;
     color: white;
     background-color:$bluedc;
+    z-index: 1;
+    position: relative;
 
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-        margin: 0px 13%;
 
         li {
             margin: 0 2%;

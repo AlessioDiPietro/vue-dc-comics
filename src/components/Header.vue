@@ -92,7 +92,7 @@ export default {
     .box-header {
         height: 115px;
         background-color: red;
-        padding: 1% 17%;
+        padding: 1% 16%;
         display: flex;
         justify-content: space-between;
         align-items: center;
