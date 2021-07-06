@@ -38,4 +38,5 @@ export default {
 </script>
 
 <style lang="scss">
+    @import './components/style/Commons.scss';
 </style>
