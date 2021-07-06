@@ -83,12 +83,12 @@ export default {
   }
 
 }
-// importazione file scss
-import '../components/style/Commons.scss'
-import '../components/style/BlueDC.scss'
 </script>
 
 <style lang="scss" scoped>
+
+// importazione file scss
+@import '../components/style/BlueDC.scss';
     .box-header {
         height: 115px;
         background-color: red;
@@ -108,8 +108,12 @@ import '../components/style/BlueDC.scss'
             padding: 47px 0;
 
             &:hover {
-                border-bottom: 3px solid black;
+                border-bottom: 3px solid $bluedc;
                 padding: 44px 0;
+                
+                a {
+                    color: $bluedc;
+                }
 
             }
 
