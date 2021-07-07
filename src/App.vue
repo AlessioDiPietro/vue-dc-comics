@@ -3,6 +3,9 @@
     <!-- barra ricerca -->
     <Header/>
 
+    <!-- jumbotron -->
+    <Jumbo/>
+
     <!-- corpo pagina -->
     <main>
       <MainContent/>
@@ -24,6 +27,7 @@ import MainContent from './components/MainContent.vue'
 import TopFooter from './components/TopFooter.vue'
 import MidFooter from './components/MidFooter.vue'
 import BottFooter from './components/BottFooter.vue'
+import Jumbo from './components/Jumbo.vue'
 
 export default {
   name: 'App',
@@ -32,7 +36,8 @@ export default {
     MainContent,
     TopFooter,
     MidFooter,
-    BottFooter
+    BottFooter,
+    Jumbo
   }
 }
 </script>
