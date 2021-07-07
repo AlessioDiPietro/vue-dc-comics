@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import MainContent from './components/MainContent.vue'
-import TopFooter from './components/TopFooter.vue'
-import MidFooter from './components/MidFooter.vue'
-import BottFooter from './components/BottFooter.vue'
-import Jumbo from './components/Jumbo.vue'
+import Header from '@/components/Header.vue'
+import MainContent from '@/components/MainContent.vue'
+import TopFooter from '@/components/TopFooter.vue'
+import MidFooter from '@/components/MidFooter.vue'
+import BottFooter from '@/components/BottFooter.vue'
+import Jumbo from '@/components/Jumbo.vue'
 
 export default {
   name: 'App',
