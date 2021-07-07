@@ -13,7 +13,7 @@
 
 <script>
 import ComicCard from "@/components/ComicCard.vue"
-import ComicsInfo from "@/data/ComicsInfo.js"
+import ComicsInfo from "@/components/data/ComicsInfo.js"
 export default {
     name: 'MainContent',
     components: {
@@ -39,12 +39,16 @@ export default {
         padding: 3% 24%; 
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         
         button{
             background-color: $bluedc;
             border: none;
             padding: 5px 30px;
             font-size: 18px;
+            margin-top: 25px;
+            cursor: pointer;
+            color: white;
         }
     }
 

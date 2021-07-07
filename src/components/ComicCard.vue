@@ -16,11 +16,16 @@ export default {
 <style lang="scss" scoped>
     .card-box {
         width: calc(100% / 6);
-        display: flex;
         padding: 5px 15px;
-        background-color: darkmagenta;
         color: white;
+        img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        h6{
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
     }
-
 
 </style>
