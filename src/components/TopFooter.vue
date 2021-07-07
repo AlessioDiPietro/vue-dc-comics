@@ -3,7 +3,7 @@
 
       <ul>
           <li v-for="(items, index) in card" :key="index">
-              <img :src="items.img" :alt="items.text">
+              <img :src="getSrc(items.img)" :alt="items.text">
               <h6>{{items.text}}</h6>
 
           </li>
@@ -20,27 +20,32 @@ export default {
             card: [
                 {
                     text: 'DIGITAL COMICS',
-                    img: '../assets/img/buy-comics-digital-comics.png'
+                    img: 'buy-comics-digital-comics.png'
 
                 },
                 {
                     text: 'DC MERCHANDISE',
-                    img: '../assets/img/buy-comics-merchandise.png'
+                    img: 'buy-comics-merchandise.png'
                 },
                 {
                     text: 'SUBSCRIPTION',
-                    img: '../assets/img/buy-comics-subscription.png'
+                    img: 'buy-comics-subscriptions.png'
                 },
                 {
                     text: 'COMIC SHOP LOCATOR',
-                    img: '../assets/img/buy-comics-digital-shop-locator.png'
+                    img: 'buy-comics-shop-locator.png'
                 },
                 {
                     text: 'DC POWER VISA',
-                    img: '../assets/img/buy-dc-power-visa.png'
+                    img: 'buy-dc-power-visa.svg'
                 },
                 
             ]
+        }
+    },
+    methods: {
+        getSrc(img){
+            return require('../assets/img/' + img)
         }
     }
 
@@ -55,6 +60,7 @@ export default {
     background-color:$bluedc;
     z-index: 1;
     position: relative;
+    padding: 3%;
 
     ul {
         display: flex;
@@ -63,12 +69,14 @@ export default {
         height: 100%;
 
         li {
-            margin: 0 2%;
+            margin: 0 1%;
             list-style: none;
-            display: inline-block;
+            display: flex;
+            align-items: center;
             
-            h4 {
-                display: inline-block;
+            img {
+                width: 60px;;
+                margin-right: 3%;
             }
         }
     }
